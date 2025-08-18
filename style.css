@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+    background-color: rgb(28, 29, 39);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* navbar start  */
+#navbar{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.navbarbtns{
+    border:2px solid white;
+}
+.navbarbtns:focus{
+    box-shadow: none;
+}
+
+.contactdropdownlink{
+    text-decoration: none;
+}
+.dropdown-menus{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.dropdown-item{
+    transition: all 0.3s ease-in-out;
+}
+.dropdown-item:hover{
+    background-color: lightgray;
+}
+.dropdown-item:hover .contactdropdownlink{
+    color: black;
+    font-size: 18px;
+}
+.dropdown-item:hover .fa-facebook{
+  color: rgb(0, 132, 240) !important;
+    font-size: 18px; 
+}
+.dropdown-item:hover .fa-viber{
+    color: rgb(151, 0, 151) !important;
+ font-size: 18px;
+}
+.dropdown-item:hover .fa-telegram{
+    color: rgb(33, 184, 245) !important;
+ font-size: 18px;
+}
+.resumebtns{
+    width: 100%;
+    border-radius: 2px;
+
+    background-color: darkblue;
+    position: relative;
+    overflow: hidden;
+}
+.resumebtns::before{
+    content:'';
+    width:5px;
+    height: 100%;
+    background-color: #f4f4f4;
+    top: 0;
+    left: 0;
+    position: absolute;
+     transition: left 0.5s ease-in-out;
+}
+.resumebtns:hover::before{
+   left:150%;
+}
+/* navbar end  */
+
+/* header start  */
+.profileBg{
+    
+    position: relative;
+    width : 500px;
+}
+.profileBg img{
+    width: 100%;
+}
+.profileBg::before{
+    content: '';
+    position: absolute;
+     top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+   width: 103%;
+  height: 103%;
+
+  border-radius: 50%;
+    z-index: -1;
+  background: conic-gradient(
+    from var(--angle),
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  animation: spin 5s linear infinite;
+}
+.headerSocials a{ 
+    color: white;
+}
+.headerSocials a i{
+    transition: all 0.3s ease-in-out;
+}
+.headerSocials a i.fa-facebook:hover{
+  color: rgb(0, 132, 240) !important;
+  transform: translateY(-5px);
+    
+}
+.headerSocials a i.fa-viber:hover{
+   color: rgb(151, 0, 151) !important;
+  transform: translateY(-5px);
+    
+}
+.headerSocials a i.fa-telegram:hover{
+    color: rgb(33, 184, 245) !important;
+  transform: translateY(-5px);
+    
+}
+@media  (max-width: 600px) {
+        .profileBg{
+            width: 350px;
+        }
+}
+
+@keyframes spin {
+    to{
+        --angle : 360deg;
+    }from{
+          --angle : 0deg;
+    }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
+/* header end  */
+
