@@ -1,4 +1,5 @@
-let text = document.getElementById('myname');
+window.addEventListener('DOMContentLoaded',function(){
+    let text = document.getElementById('myname');
 let char = SplitText.create(text,{
     type : 'chars'
 })
@@ -18,3 +19,5 @@ tl.from(char.chars,{
     opacity : 0
 })
 
+
+})
