@@ -16,11 +16,12 @@
 </head>
 
 <body>
-    <!-- nav start  -->
+  <div class="nav-header">
+      <!-- nav start  -->
     <nav class="navbar navbar-expand-md bg-dark" id="navbar">
         <div class="container py-1">
             <div class="navbar-brand">
-                <img src="./assets/logo.png" alt="logo" width="50" />
+                <img src="./assets/logo.png" alt="logo" width="35" class="logo"/>
             </div>
             <button class="navbar-toggler navbarbtns" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span><i class="fa-solid fa-bars p-1 text-white"></i></span>
@@ -59,15 +60,15 @@
     </nav>
     <!-- nav end  -->
      <!-- header start  -->
-      <section class="header mt-5">
+      <section class="header my-auto">
         <div class="container">
             <div class="row">
-                <div class="col col-12  text-center text-white">
-                   <div class="profileBg mb-2 mx-auto">
-                     <img src="./assets/logo.png" alt="profile" class="profile"  style="border-radius: 50%;">
+                <div class="col col-12  text-center text-white header-child">
+                   <div class="profileBg  mb-2 mx-auto">
+                     <img src="./assets/logo.png" alt="profile" class="profile" id="profile"  style="border-radius: 50%;">
                    </div>
                     <!-- name & contact start  -->
-                     <div class="mt-5">
+                     <div class="mt-4">
                         <h3 id="myname">Thiha Tine Zaw</h3>
                         <p class="headerPTags">Can Contact Below the link</p>
                         <!-- social icon start  -->
@@ -85,9 +86,43 @@
       </section>
       <!-- header end  -->
 
+  </div>
+  <!-- about me section and what I learned start  -->
+    <section class="mt-4">
+        <div class="container">
+           <div class="row">
+            <div class="col col-12 col-md-6 text-start text-white" id="aboutMe">
+                <div class="about-me-header">
+                    <h5>About Me</h5>
+                </div>
+                <div class="about-me-paragraph">
+                   <ul>
+                    <li>💻 IT Technician in Yangon, focused on growth and staying current with tech. </li>
+                    <li>🙆‍♂️ Committed to providing reliable support and optimizing system performance. </li>
+                    <li>😇 In my free time, I enjoy watching movies and browsing YouTube. </li>
+                   </ul>
+                </div>
+            </div>
+             <div class="col col-12 col-md-6 text-start text-white" id="becameInterested">
+                <div class="about-me-header">
+                    <h5>How I became interested in this field</h5>
+                </div>
+                <div class="about-me-paragraph">
+                   <ul>
+                   <li>🎬 Watching the Mr. Robot series sparked my interest in tech. </li>
+                   <li>👨‍💻 During COVID-19 pandemic, I started learning HTML and CSS, but it was tough at first. </li>
+                    <li>🚀 I’m committed to lifelong learning and growth in this dynamic field.</li>
+                   </ul>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+   <!-- about me section and what I learned end  -->
 <!-- gsap  -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
 <script src="./script.js" type="text/javascript"></script>
 

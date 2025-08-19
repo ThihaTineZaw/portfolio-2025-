@@ -69,9 +69,17 @@ body {
 /* navbar end  */
 
 /* header start  */
+
+.header .header-child{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
+}
 .profileBg {
   position: relative;
-  width: 500px;
+  width: 350px;
 }
 .profileBg img {
   width: 100%;
@@ -87,14 +95,22 @@ body {
 
   border-radius: 50%;
   z-index: -1;
+  display: none;
   background: conic-gradient(
     from var(--angle),
     rgba(42, 123, 155, 1) 0%,
     rgba(87, 199, 133, 1) 50%,
     rgba(237, 221, 83, 1) 100%
   );
-  animation: spin 5s linear infinite;
+  opacity: 0;
+ 
 }
+.profileBg.loaded-animation::before{
+  display: block;
+  opacity: 1;
+   animation: spin 5s linear infinite;
+}
+
 .headerSocials a {
   color: white;
 }
@@ -113,9 +129,12 @@ body {
   color: rgb(33, 184, 245) !important;
   transform: translateY(-5px);
 }
-@media (max-width: 600px) {
+@media (max-width: 380px) {
   .profileBg {
-    width: 350px;
+    width: 300px;
+  }
+  .logo{
+    width: 30px;
   }
 }
 
@@ -134,3 +153,29 @@ body {
 }
 
 /* header end  */
+
+  /* about me section and what I learned start   */
+  .about-me-header{
+    position: relative;
+    margin: 0 15px;
+  }
+  .about-me-header::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f4f4f4;
+
+    position: absolute;
+    top: 0;
+    left: -15px;
+    
+  }
+
+
+
+  .about-me-paragraph{
+    text-align: justify;
+    padding: 15px;
+  }
+
+  /* about me section and what I learned end   */
