@@ -70,13 +70,6 @@ body {
 
 /* header start  */
 
-.header .header-child{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- align-items: center;
-}
 .profileBg {
   position: relative;
   width: 350px;
@@ -158,6 +151,7 @@ body {
   .about-me-header{
     position: relative;
     margin: 0 15px;
+   
   }
   .about-me-header::before{
     content: "";
@@ -170,12 +164,55 @@ body {
     left: -15px;
     
   }
-
-
-
   .about-me-paragraph{
     text-align: justify;
     padding: 15px;
   }
 
   /* about me section and what I learned end   */
+
+  /* working experience section start */
+
+  .workingExperienceSection-header,.learned-section-header{
+    position: relative;
+    margin: 0 15px;
+  }
+  .workingExperienceSection-header::before,.learned-section-header::before{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f4f4f4;
+
+    position: absolute;
+    top: 0;
+    left: -15px;
+    
+  }
+
+  .workingExprienceBoxes,.learnedBoxes{
+    position: relative;
+    margin-left: 40px;
+  }
+
+  .workingExprienceBoxes::before,.learnedBoxes::before{
+    content: '';
+    width: 3px;
+    height: 0%;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+
+    position: absolute;
+    left: -15px;
+  }
+
+  @media (max-width: 380px) {
+  .workingExprienceBoxes{
+       margin-left: 35px;
+  }
+}
+  @media (max-width:768px){
+    .learned-section-header{
+      margin-top: 70px
+    }
+  }  
+  /* working experience section end */
