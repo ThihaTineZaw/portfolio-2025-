@@ -194,7 +194,7 @@ body {
     margin-left: 40px;
   }
 
-  .workingExprienceBoxes::before,.learnedBoxes::before{
+  .workingExprienceBoxes::before{
     content: '';
     width: 3px;
     height: 0%;
@@ -204,6 +204,50 @@ body {
     position: absolute;
     left: -15px;
   }
+  .learnedBoxes::before{
+    content: '';
+    width: 3px;
+    height: 0%;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+
+    position: absolute;
+    left: -15px;
+  }
+
+  /* cisco and microtik image icon section  */
+    .icons-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    gap: 10px;
+  }
+
+  .cisco,.microtik,.fa-html5,.fa-css3-alt,.fa-js,.fa-php,.fa-database{
+    width: 45px;
+    height: 45px;
+    font-size: 35px;
+  }
+  
+  .fa-html5{
+    color:#E34F26;
+  }
+  .fa-css3-alt{
+    color:#264DE4;
+  }
+  .fa-js{
+    color: #F7DF1E;
+  }
+  .fa-php{
+    color: #777BB4;
+  }
+  .fa-database{
+    color: #00758F;
+  }
+
+
+
 
   @media (max-width: 380px) {
   .workingExprienceBoxes{
