@@ -3,6 +3,7 @@
 body {
   background-color: rgb(28, 29, 39);
   font-family: "Courier New", Courier, monospace;
+  user-select: none;
 }
 
 /* navbar start  */
@@ -209,7 +210,7 @@ body {
     border-radius: 12px;
     background-color: #f4f4f4;
 
-    position: absolute;
+    position: absolute;  /* cisco and microtik image icon section  */
     left: -15px;
   }
   .learnedBoxes::before{
@@ -223,19 +224,21 @@ body {
     left: -15px;
   }
 
-  /* cisco and microtik image icon section  */
+
     .icons-box{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 250px;
-    gap: 10px;
+    gap: 15px;
+
+
   }
 
   .cisco,.microtik,.fa-html5,.fa-css3-alt,.fa-js,.fa-php,.fa-database{
-    width: 45px;
-    height: 45px;
-    font-size: 35px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
   }
   
   .fa-html5{
@@ -261,22 +264,36 @@ body {
   .workingExprienceBoxes,.learnedBoxes{
        margin-left: 35px;
   }
- .cisco,.microtik,.fa-html5,.fa-css3-alt,.fa-js,.fa-php,.fa-database{
-   width: 35px;
-    height: 35px;
-font-size: 30px;
-  }
 }
   @media (max-width:768px){
     .workingExperienceSection{
-      margin-top: 70px
+      margin-top: 70px;
     }
-  }  
-  /* working experience section end */
+    
+  }   
 
-
-   @media (min-width:1400px){
+   @media (max-width:1400px){
     h4{
       font-size: 2rem;
     }
   }  
+  /* working experience section start */
+
+  /* project section start  */
+
+  .project-section{
+    background: url(./assets/background.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .curosels{
+    border: 1px solid white;
+
+  }
+
+
+
+  /* project section end  */
+
+ 

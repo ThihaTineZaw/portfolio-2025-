@@ -1,232 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <!-- fontawesome link  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- bootstrap css link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-        <!-- custom css link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- custom css link  -->
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>Welcome</title>
-</head>
+  </head>
 
-<body>
-  <div class="nav-header">
+  <body>
+    <div class="nav-header">
       <!-- nav start  -->
-    <nav class="navbar navbar-expand-md bg-dark" id="navbar">
+      <nav class="navbar navbar-expand-md bg-dark" id="navbar">
         <div class="container py-1">
-            <div class="navbar-brand">
-                <img src="./assets/logo.png" alt="logo" width="35" class="logo"/>
-            </div>
-            <button class="navbar-toggler navbarbtns" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span><i class="fa-solid fa-bars p-1 text-white"></i></span>
-            </button>
+          <div class="navbar-brand">
+            <img src="./assets/logo.png" alt="logo" width="35" class="logo" />
+          </div>
+          <button
+            class="navbar-toggler navbarbtns"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span><i class="fa-solid fa-bars p-1 text-white"></i></span>
+          </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item me-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link text-white" aria-current="page" href="#">Project</a>
-                    </li>
-                    <li class="nav-item dropdown me-3">
-                        <a class="nav-link dropdonw-toggle text-white" data-bs-toggle="dropdown" aria-current="page"
-                            href="#">Contact</a>
-                        <ul class="dropdown-menu bg-dark dropdown-menus">
-                            <li class="dropdown-item">
-                                  <i class="fa-brands fa-facebook text-white mx-1"></i> <a href="" class="contactdropdownlink">Facebook</a>
-                            </li>
-                            <li class="dropdown-item">
-                                 <i class="fa-brands fa-viber text-white mx-1"></i> <a href="" class="contactdropdownlink" >Viber</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <i class="fa-brands fa-telegram text-white mx-1"></i> <a href="" class="contactdropdownlink">Telegram</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- resume link  -->
-                   <div class="ms-3">
-                     <a href="https://google.com" class="btn btn-primary resumebtns" target="_blank">Resume</a>
-                   </div>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >Project</a
+                >
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a
+                  class="nav-link dropdonw-toggle text-white"
+                  data-bs-toggle="dropdown"
+                  aria-current="page"
+                  href="#"
+                  >Contact</a
+                >
+                <ul class="dropdown-menu bg-dark dropdown-menus">
+                  <li class="dropdown-item">
+                    <i class="fa-brands fa-facebook text-white mx-1"></i>
+                    <a href="" class="contactdropdownlink">Facebook</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <i class="fa-brands fa-viber text-white mx-1"></i>
+                    <a href="" class="contactdropdownlink">Viber</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <i class="fa-brands fa-telegram text-white mx-1"></i>
+                    <a href="" class="contactdropdownlink">Telegram</a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <!-- resume link  -->
+              <div class="ms-3">
+                <a
+                  href="https://google.com"
+                  class="btn btn-primary resumebtns"
+                  target="_blank"
+                  >Resume</a
+                >
+              </div>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <!-- nav end  -->
-     <!-- header start  -->
+      </nav>
+      <!-- nav end  -->
+      <!-- header start  -->
       <section class="header my-auto mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col col-12  text-center text-white header-child">
-                   <div class="profileBg  mb-2 mx-auto">
-                     <img src="./assets/logo.png" alt="profile" class="profile" id="profile"  style="border-radius: 50%;">
-                   </div>
-                    <!-- name & contact start  -->
-                     <div class="mt-4">
-                        <h3 id="myname">Thiha Tine Zaw</h3>
-                        <p class="headerPTags">Can Contact Below the link</p>
-                        <!-- social icon start  -->
-                         <div class="mt-3 headerSocials">
-                            <a href=""><i class="fa-brands fa-facebook fs-3"></i></a>
-                            <a href=""><i class="fa-brands fa-viber fs-3"></i></a>
-                            <a href=""><i class="fa-brands fa-telegram fs-3"></i></a>
-                         </div>
-                        <!-- social icon end  -->
-                     </div>
-                    <!-- name & contact end  -->
+          <div class="row">
+            <div class="col col-12 text-center text-white header-child">
+              <div class="profileBg mb-2 mx-auto">
+                <img
+                  src="./assets/logo.png"
+                  alt="profile"
+                  class="profile"
+                  id="profile"
+                  style="border-radius: 50%"
+                />
+              </div>
+              <!-- name & contact start  -->
+              <div class="mt-4">
+                <h3 id="myname">Thiha Tine Zaw</h3>
+                <p class="headerPTags">Can Contact Below the link</p>
+                <!-- social icon start  -->
+                <div class="mt-3 headerSocials">
+                  <a href=""><i class="fa-brands fa-facebook fs-3"></i></a>
+                  <a href=""><i class="fa-brands fa-viber fs-3"></i></a>
+                  <a href=""><i class="fa-brands fa-telegram fs-3"></i></a>
                 </div>
+                <!-- social icon end  -->
+              </div>
+              <!-- name & contact end  -->
             </div>
+          </div>
         </div>
       </section>
       <!-- header end  -->
-
-  </div>
-  <!-- about me section and what I learned start  -->
+    </div>
+    <!-- about me section and what I learned start  -->
     <section class="mt-5">
-        <div class="container">
-           <div class="row">
-            <div class="col col-12 col-md-6 text-start text-white" id="aboutMe">
-                <div class="about-me-header">
-                    <h4>About Me</h4>
-                </div>
-                <div class="about-me-paragraph">
-                   <ul>
-                    <li>💻 IT Technician in Yangon, focused on growth and staying current with tech. </li>
-                    <li>🙆‍♂️ Committed to providing reliable support and optimizing system performance. </li>
-                    <li>😇 In my free time, I enjoy watching movies and browsing YouTube. </li>
-                   </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-md-6 text-start text-white" id="aboutMe">
+            <div class="about-me-header">
+              <h4>About Me</h4>
             </div>
-             <div class="col col-12 col-md-6 text-start text-white" id="becameInterested">
-                <div class="about-me-header">
-                    <h4>My Passion</h4>
-                </div>
-                <div class="about-me-paragraph">
-                   <ul>
-                   <li>🎬 Watching the Mr. Robot series sparked my interest in tech. </li>
-                   <li>👨‍💻 During COVID-19 pandemic, I started learning HTML and CSS, but it was tough at first. </li>
-                    <li>🚀 I’m committed to lifelong learning and growth in this dynamic field.</li>
-                   </ul>
-                </div>
+            <div class="about-me-paragraph">
+              <ul>
+                <li>
+                  💻 IT Technician in Yangon, focused on growth and staying
+                  current with tech.
+                </li>
+                <li>
+                  🙆‍♂️ Committed to providing reliable support and optimizing
+                  system performance.
+                </li>
+                <li>
+                  😇 In my free time, I enjoy watching movies and browsing
+                  YouTube.
+                </li>
+              </ul>
             </div>
-           </div>
+          </div>
+          <div
+            class="col col-12 col-md-6 text-start text-white"
+            id="becameInterested"
+          >
+            <div class="about-me-header">
+              <h4>My Passion</h4>
+            </div>
+            <div class="about-me-paragraph">
+              <ul>
+                <li>
+                  🎬 Watching the Mr. Robot series sparked my interest in tech.
+                </li>
+                <li>
+                  👨‍💻 During COVID-19 pandemic, I started learning HTML and CSS,
+                  but it was tough at first.
+                </li>
+                <li>
+                  🚀 I’m committed to lifelong learning and growth in this
+                  dynamic field.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-   <!-- about me section and what I learned end  -->
+    <!-- about me section and what I learned end  -->
 
-   <!-- working experience section start  -->
+    <!-- working experience section start  -->
     <section class="mt-5 mb-5">
-       <div class="container">
-         <div class="row">
-              <div class="col col-12 col-md-6 text-white course-sections" >
-                <div class="learned-section" id="learned-section">
-                    <h4 class="workingExperienceSection-header learned-section-header" id="learned-section-header">What I Learned</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-md-6 text-white course-sections">
+            <div class="learned-section" id="learned-section">
+              <h4
+                class="workingExperienceSection-header learned-section-header"
+                id="learned-section-header"
+              >
+                What I Learned
+              </h4>
 
-                    <div class="learnedBoxes" id="learnedBoxes">
-                         <div class="section-1 mt-5" class="workingExprienceBox-1" id="learndbox-1">
-                        <h5>SNE Course</h5>
-                          <ul>
-                             <li>Completed the A+ Course at Youth Training Center, demonstrating foundational knowledge in IT hardware and software.</li>
-                          </ul>
-                    </div>
-                       <div class="section-2 mt-5" id="learndbox-2">
-                        <h5>ANE Course</h5>
-                          <ul>
-                             <li>Completed the Networking Essentials (NE) Course at Youth University, gaining skills in network fundamentals.</li>
-                          </ul>
-                    </div>
-                      <div class="section-3 mt-5" id="learndbox-3">
-                        <h5>Linux Administration Course</h5>
-                        <ul>
-                               <li>Completed Linux System Administration at Docker IT Training Center, with a focus on system management and operations.</li>
-                        </ul>
-                    </div>
-                     <div class="section-3 mt-5" id="learndbox-4">
-                        <h5>CCNA Course</h5>
-                        <ul>
-                               <li>Certified in CCNA (Routing and Switching) at CCNA VCE Training Center, validating expertise in network infrastructure.</li>
-                        </ul>
-                    </div>
-                     <div class="section-3 mt-5" id="learndbox-5">
-                        <h5>Mikrotik Course</h5>
-                        <ul>
-                               <li>Completed the Mikrotik Course at Myanmar Information Technology Academy, specializing in network routing and management.</li>
-                        </ul>
-                    </div>
-                      <div class="section-3 mt-5" id="learndbox-6">
-                        <h5>PABX/PBX</h5>
-                        <ul>
-                               <li>Completed the PABX Termination and System Programming Course (PANASONIC -TES824 & NS300), gaining practical skills in telephony and communication systems.</li>
-                        </ul>
-                    </div>
-                    </div>
+              <div class="learnedBoxes" id="learnedBoxes">
+                <div
+                  class="section-1 mt-5"
+                  class="workingExprienceBox-1"
+                  id="learndbox-1"
+                >
+                  <h5>SNE Course</h5>
+                  <ul>
+                    <li>
+                      Completed the A+ Course at Youth Training Center,
+                      demonstrating foundational knowledge in IT hardware and
+                      software.
+                    </li>
+                  </ul>
                 </div>
-             </div>
-            <div class="col col-12 col-md-6 text-white">
-                <div class="workingExperienceSection" id="workingExperienceSection">
-                    <h4 class="workingExperienceSection-header" id="workingExperienceSection-header">Working Experience</h4>
-
-                    <div class="workingExprienceBoxes" id="workingExprienceBoxes">
-                         <div class="section-1 mt-5" class="workingExprienceBox-1" id="workingExprienceBox-1">
-                        <h5>Sea Reliance Shipping Company (Oct 2023 – Present)</h5>
-                          <ul>
-                             <li>Manage and maintain network and router performance (MikroTik, wireless devices).</li>
-                            <li >Provide IT support for desktops, laptops, printers.</li>
-                                <li >Install and configure OS/software based on user requirements.</li>
-                              <li >Perform regular backups, troubleshoot CCTV & PABX issues.</li>
-                               <li >Provide IT support for desktops, laptops, printers, and Linux systems.</li>
-                          </ul>
-                    </div>
-                       <div class="section-2 mt-5" id="workingExprienceBox-2">
-                        <h5>Shwe Bank (Jan 2023 – Sept 2023)</h5>
-                          <ul>
-                             <li>Supported daily banking operations and reporting processes.</li>
-                            <li>Assisted in preparing documents and coordinating with teams for smooth workflow.</li>
-                          </ul>
-                    </div>
-                      <div class="section-3 mt-5" id="workingExprienceBox-3">
-                        <h5>Marketplace by City Mart (Part-time, Kantharyar Center)</h5>
-                        <ul>
-                               <li>Worked part-time while studying, gaining experience in communication, teamwork, and problem-solving.</li>
-                        </ul>
-                    </div>
-                   
-                    </div>
-                     <div class="icons-box" id="icons-box">
-                      <div class="icons"><i class="fa-brands fa-html5"></i></div>
-                      <div class="icons"><i class="fa-brands fa-css3-alt"></i></div>
-                      <div class="icons"><i class="fa-brands fa-js"></i></div>
-                      <div class="icons"><i class="fa-brands fa-php"></i></div>
-                      <div class="icons"><i class="fa-solid fa-database"></i></div>
-                      <div class="icons"><img src="./assets/cisco.webp" alt="cisco-icon" class="cisco"></div>
-                      <div class="icons"><img src="./assets/mikrotik-icon.png" alt="microtik-icon" class="microtik"></div>
-                    </div>
+                <div class="section-2 mt-5" id="learndbox-2">
+                  <h5>ANE Course</h5>
+                  <ul>
+                    <li>
+                      Completed the Networking Essentials (NE) Course at Youth
+                      University, gaining skills in network fundamentals.
+                    </li>
+                  </ul>
                 </div>
+                <div class="section-3 mt-5" id="learndbox-3">
+                  <h5>Linux Administration Course</h5>
+                  <ul>
+                    <li>
+                      Completed Linux System Administration at Docker IT
+                      Training Center, with a focus on system management and
+                      operations.
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-3 mt-5" id="learndbox-4">
+                  <h5>CCNA Course</h5>
+                  <ul>
+                    <li>
+                      Certified in CCNA (Routing and Switching) at CCNA VCE
+                      Training Center, validating expertise in network
+                      infrastructure.
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-3 mt-5" id="learndbox-5">
+                  <h5>Mikrotik Course</h5>
+                  <ul>
+                    <li>
+                      Completed the Mikrotik Course at Myanmar Information
+                      Technology Academy, specializing in network routing and
+                      management.
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-3 mt-5" id="learndbox-6">
+                  <h5>PABX/PBX</h5>
+                  <ul>
+                    <li>
+                      Completed the PABX Termination and System Programming
+                      Course (PANASONIC -TES824 & NS300), gaining practical
+                      skills in telephony and communication systems.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-           
+          </div>
+          <div class="col col-12 col-md-6 text-white">
+            <div class="workingExperienceSection" id="workingExperienceSection">
+              <h4
+                class="workingExperienceSection-header"
+                id="workingExperienceSection-header"
+              >
+                Working Experience
+              </h4>
+
+              <div class="workingExprienceBoxes" id="workingExprienceBoxes">
+                <div
+                  class="section-1 mt-5"
+                  class="workingExprienceBox-1"
+                  id="workingExprienceBox-1"
+                >
+                  <h5>Sea Reliance Shipping Company (Oct 2023 – Present)</h5>
+                  <ul>
+                    <li>
+                      Manage and maintain network and router performance
+                      (MikroTik, wireless devices).
+                    </li>
+                    <li>Provide IT support for desktops, laptops, printers.</li>
+                    <li>
+                      Install and configure OS/software based on user
+                      requirements.
+                    </li>
+                    <li>
+                      Perform regular backups, troubleshoot CCTV & PABX issues.
+                    </li>
+                    <li>
+                      Provide IT support for desktops, laptops, printers, and
+                      Linux systems.
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-2 mt-5" id="workingExprienceBox-2">
+                  <h5>Shwe Bank (Jan 2023 – Sept 2023)</h5>
+                  <ul>
+                    <li>
+                      Supported daily banking operations and reporting
+                      processes.
+                    </li>
+                    <li>
+                      Assisted in preparing documents and coordinating with
+                      teams for smooth workflow.
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-3 mt-5" id="workingExprienceBox-3">
+                  <h5>
+                    Marketplace by City Mart (Part-time, Kantharyar Center)
+                  </h5>
+                  <ul>
+                    <li>
+                      Worked part-time while studying, gaining experience in
+                      communication, teamwork, and problem-solving.
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="icons-box" id="icons-box">
+                <div class="icons"><i class="fa-brands fa-html5"></i></div>
+                <div class="icons"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="icons"><i class="fa-brands fa-js"></i></div>
+                <div class="icons"><i class="fa-brands fa-php"></i></div>
+                <div class="icons"><i class="fa-solid fa-database"></i></div>
+                <div class="icons">
+                  <img
+                    src="./assets/cisco.webp"
+                    alt="cisco-icon"
+                    class="cisco"
+                  />
+                </div>
+                <div class="icons">
+                  <img
+                    src="./assets/mikrotik-icon.png"
+                    alt="microtik-icon"
+                    class="microtik"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
+      </div>
     </section>
     <!-- working experience section end  -->
 
-<!-- gsap  -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CSSRulePlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-<script src="./script.js" type="text/javascript"></script>
+    <!-- project section start  -->
+    <section class="mt-5">
+      <div class="project-section" id="project-section">
+        <div class="container">
+          <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner py-5" data-bs-ride="carousel">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100 mx-auto rounded-3 curosels"
+                  src="./assets/project-01.jpg"
+                  alt="First slide"
+                />
+              </div>
+               <div class="carousel-item">
+                <img
+                  class="d-block w-100 mx-auto rounded-3 curosels"
+                  src="./assets/project-02.jpg"
+                  alt="Second slide"
+                />
+              </div>
+               <div class="carousel-item">
+                <img
+                  class="d-block w-100 mx-auto rounded-3 curosels"
+                  src="./assets/project-03.jpg"
+                  alt="Third slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100 mx-auto rounded-3 curosels"
+                  src="./assets/project-04.jpg"
+                  alt="Forth slide"
+                />
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <!-- project section end  -->
+     <div class="mt-5"></div>
 
-</body>
+    <!-- gsap  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
