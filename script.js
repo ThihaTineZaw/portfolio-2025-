@@ -1,4 +1,5 @@
-// profile effect 
+document.addEventListener('DOMContentLoaded', (event)=>{
+  // profile effect 
 
 let profile = document.getElementById('profile');
 function loadAnni() {
@@ -6,8 +7,7 @@ function loadAnni() {
 };
 setTimeout(loadAnni, 3000);
 
-let text = document.getElementById('myname');
-let char = SplitText.create(text, { type: 'chars' });
+let char = SplitText.create(document.getElementById('myname'), { type: 'chars' });
 let tl = gsap.timeline();
 
 tl.from(char.chars, { y: 10, stagger: 0.1, opacity: 0 })
@@ -101,19 +101,6 @@ gsap.fromTo('.icons',
   }
 );
 // icon animation end
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
 // Experience Section End 
+
+})

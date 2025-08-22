@@ -130,6 +130,14 @@ body {
     width: 30px;
   }
 }
+@media (max-width: 320px) {
+  .profileBg {
+    width: 270px;
+  }
+  .logo{
+    width: 27px;
+  }
+}
 
 @keyframes spin {
   to {
@@ -250,13 +258,25 @@ body {
 
 
   @media (max-width: 380px) {
-  .workingExprienceBoxes{
+  .workingExprienceBoxes,.learnedBoxes{
        margin-left: 35px;
+  }
+ .cisco,.microtik,.fa-html5,.fa-css3-alt,.fa-js,.fa-php,.fa-database{
+   width: 35px;
+    height: 35px;
+font-size: 30px;
   }
 }
   @media (max-width:768px){
-    .learned-section-header{
+    .workingExperienceSection{
       margin-top: 70px
     }
   }  
   /* working experience section end */
+
+
+   @media (min-width:1400px){
+    h4{
+      font-size: 2rem;
+    }
+  }  
