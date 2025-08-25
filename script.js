@@ -104,3 +104,44 @@ gsap.fromTo('.icons',
 // Experience Section End 
 
 })
+
+$(document).ready(function(){
+
+  $('.projectBoxes-content').hide();
+  $('#projectBox-01').mouseover(function(){
+        $('#project01').fadeIn()
+  });
+  
+    $('#projectBox-01').mouseleave(function(){
+        $('#project01').fadeOut()
+      
+  })
+
+  $('#projectBox-02').mouseover(function(){
+        $('#project02').fadeIn()
+  });
+  
+    $('#projectBox-02').mouseleave(function(){
+        $('#project02').fadeOut()
+      
+  })
+
+  $('#projectBox-03').mouseover(function(){
+        $('#project03').fadeIn()
+  });
+  
+    $('#projectBox-03').mouseleave(function(){
+        $('#project03').fadeOut()
+      
+  })
+
+  $('#projectBox-04').mouseover(function(){
+        $('#project04').fadeIn()
+  });
+  
+    $('#projectBox-04').mouseleave(function(){
+        $('#project04').fadeOut()
+      
+  })
+  
+})
